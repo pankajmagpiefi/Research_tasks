@@ -13,17 +13,6 @@ import requests
 
 class TheGraph(object):
 	client = None;
-	
-	"""
-	A starting point for querying pool data from the Balancer Subgraph.
-		At time of writing, this package does not cover all types of queries
-		possible to the Balancer V2 Subgraph. It does, however, allow users 
-		to query pool data, among other things. Types of queries will ultimately
-		grow to include all possible queries to the Balancer Subgraph.
-
-		For more information on the Subgraph, please go to:
-		https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2
-	"""
 
 	def __init__(self, network="mainnet", customUrl=None, usingJsonEndpoint=False):
 		super(TheGraph, self).__init__()
